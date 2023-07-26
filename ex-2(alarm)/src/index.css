@@ -1,0 +1,105 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  background-color: black;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#App {
+  color: white;
+  width: 80%;
+  height: 60%;
+  background-color: rgb(138, 49, 138);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+
+#alarmWindow {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  color: white;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+}
+#form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+input,
+select,
+button {
+  border: none;
+  border-radius: 7px;
+  width: 60%;
+  height: 30px;
+}
+.alarms {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-top: 20px;
+}
+
+.alarminthisday {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: aliceblue;
+  padding: 10px;
+  scrollbar-width: 10px;
+  scrollbar-color: rgb(138, 49, 138);
+  scrollbar-track-color: black;
+  min-width: 200px;
+  border-radius: 15px;
+  margin-top: 10px;
+  height: 128px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  font-weight: 700;
+}
+#alarmday {
+  color: aliceblue;
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+option {
+  background-color: black;
+}
+.alarm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-solid {
+  width: 40px;
+}
+#day {
+  color: aliceblue;
+}
+select {
+  background-color: black;
+}
